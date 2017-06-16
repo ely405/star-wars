@@ -2,6 +2,7 @@
 
 const render = (root)=>{
   root.empty();
+  root.on('change', $('#select-option'), optionSelected);
   root.append(createOption(state.families));
 }
 
